@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GERADOR DE SENHA</h1>
+            <form class="container--form" id="container--form">
+                <label for="password-characters">Tamanho 8 caracteres</label>
+                <input type="range" name="" id="password-characters" min="8" max="25">
+                <button id="btn-password">Gerar senha</button>
+            </form>
+
+        <div class="container-password hide" id="container-password">
+            <h2>Sua senha gerada foi :</h2>
+            <span id="password" class="password" onclick="copyPassword()">wekwwekwkwe</span>
+            <span id="tooltip" class="tooltip">Clique na senha para copiar</span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

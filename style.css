@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #333;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    min-width: 400px;
+    margin-bottom: 30px;
+}
+
+.container .container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container--form input {
+    margin-bottom: 30px;
+    -webkit-appearance: none;
+}
+
+.container .container--form button {
+    margin-bottom: 30px;
+    padding: 10px 5px;
+    font-size: 12pt;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(35, 194, 35);
+    border: none;
+}
+
+.container  .container-password {
+    display: flex;
+    flex-direction: column;
+}
+
+.container  .container-password h2 {
+    margin-bottom: 10px;
+}
+
+.container  .container-password .password {
+    padding: 20px 10px;
+    background-color: #000a;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container  .container-password .tooltip{
+    text-align: center;
+    padding: 5px;
+    background-color: #000a;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+    transition: 0.3s;
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+
+.container .hide {
+    display: none;
+}
